@@ -1,0 +1,116 @@
+---
+---
+@import "bootstrap";
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #343a40;
+}
+.jumbotron {
+              background-image: url(/assets/img/cover.jpg);
+              background-size: cover;
+              height: 100%;
+              padding-top: 10%;
+              padding-bottom: 13%;
+            }
+header {
+              background-color: #D1D0D0;
+              background-size: cover;
+              height: 100%;
+              padding-top: 10%;
+              padding-bottom: 10%;
+}
+#Services {
+              padding-top: 0%;
+              padding-bottom: 5%;
+}
+#Gallery {
+              padding-top: 5%;
+              padding-bottom: 15%;
+}
+#Videos {
+              padding-top:1%;
+              padding-bottom: 5%;
+              margin-top: 1px;
+
+}
+#Contact {
+              padding-top:15%;
+              padding-bottom: 5%;
+}
+.container .row .col {
+              padding-top: 0%;
+              padding-bottom: 3%;
+}
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.8;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
