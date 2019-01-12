@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.gallery-form').magnificPopup({
+  $('.gallery').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
         gallery: {
@@ -16,4 +16,10 @@ $(document).ready(function() {
 
   		fixedContentPos: false
   	});
+    $('.nav-link').click(function() {
+    var id = $(this).attr('id');
+    $('html, body').animate({
+        scrollTop: ($('#' + id + '.section').offset().top)
+    }, 1000);
+});
 });

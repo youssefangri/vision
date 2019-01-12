@@ -1,24 +1,24 @@
 ---
 layout : default
 ---
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
   <div class="container">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Services">Services</a>
+                <a class="nav-link" id="Services" href="#Services">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Gallery">Gallery</a>
+                <a class="nav-link" id="Gallery" href="#Gallery">Gallery</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Videos">Videos</a>
+                <a class="nav-link" id="Videos" href="#Videos">Videos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact us</a>
+                <a class="nav-link" id="Contact" href="#Contact">Contact us</a>
             </li>
         </ul>
     </div>
@@ -50,14 +50,15 @@ Avec ses principes d’excellence et de dévouement, VISION a réuni les meilleu
 </p>
     <!--Popupform
     <a class="popup-with-form btn btn-success btn-lg" href="#contactform" role="button">Contact us</a> -->
-    <a class=" btn btn-success btn-lg" href="#contactform" role="button">Contact us</a>
+    <a class=" btn btn-success btn-lg" href="#contact" role="button">Contact us</a>
   </div>
 </div>
 
 
-
+<div class="main">
 {% include services.html %}
-{%include gallery.html %}
+{%include gallery2.html %}
 {%include videos.html %}
 {% include contact.html %}
 {% include footer.html %}
+</div>
